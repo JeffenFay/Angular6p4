@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app>
+<head>
+  <meta charset="utf-8" />
+  <title>Exercice 6 - Zbraaaah !</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+  <!-- Custom templates -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TITLE -->
+  <h1>Exercice 6p4 :<span id="flavorText">"Un intellectuel assis va toujours moins loin qu'un con qui marche." -<p id="movieName">Audiard's movies</p>-</span></h1>
+  <!-- CONTENT PAGE -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="input-group" id="spinner">
+                <span class="input-group-btn btn-group-sm" ng-click="showme=true">
+            	    <button type="button" class="btn btn-danger"  data-action="hide"><span class="fa fa-minus"></span></button>
+            	</span>
+
+            	<p id="txt" ng-hide="showme">La raison de ma présence est une énigme, sur ce, je m'en vais.</p>
+              <p id="txt2" ng-show="showme">Je suis de retour pour vous jouer un mauvais tour.</p>
+
+            	<span class="input-group-btn btn-group-sm" ng-click="showme=false">
+            	    <button type="button" class="btn btn-success" data-action="show"><span class="fa fa-plus"></span></button>
+            	</span>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
